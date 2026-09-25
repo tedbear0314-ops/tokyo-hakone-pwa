@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6dce3" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="東京箱根" />
+  <title>TOKYO × HAKONE 2026</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="preload" as="image" href="assets/cover-hero.webp" fetchpriority="high" />
+  <link rel="stylesheet" href="styles.css?v=2.6" />
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">PRIVATE TRAVEL PWA · V2.6</div>
+        <h1 id="pageTitle">TOKYO × HAKONE</h1>
+      </div>
+      <div class="topbar-actions">
+        <span id="networkBadge" class="status-pill">● 線上</span>
+        <button id="installBtn" class="icon-btn" hidden aria-label="安裝 App">＋</button>
+      </div>
+    </header>
+
+    <main id="view" class="view" aria-live="polite"></main>
+
+    <nav class="bottom-nav" aria-label="主要導覽">
+      <button class="nav-item active" data-view="home" aria-label="首頁"><img class="nav-img" src="assets/nav/home.webp" alt="首頁"></button>
+      <button class="nav-item" data-view="trip" aria-label="行程"><img class="nav-img" src="assets/nav/trip.webp" alt="行程"></button>
+      <button class="nav-item" data-view="map" aria-label="地圖"><img class="nav-img" src="assets/nav/map.webp" alt="地圖"></button>
+      <button class="nav-item" data-view="more" aria-label="更多"><img class="nav-img" src="assets/nav/more.webp" alt="更多"></button>
+    </nav>
+  </div>
+  <script src="app.js?v=2.6" defer></script>
+</body>
+</html>
